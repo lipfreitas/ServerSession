@@ -1,0 +1,42 @@
+{
+    "name": "ff/serversession",
+    "description": "Shared session for php servers",
+    "keywords": [
+        "ff",
+        "serversession"
+    ],
+    "homepage": "https://github.com/ff/serversession",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Felipe Fernandes",
+            "email": "felipe@coresoft.com.br",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FF\\ServerSession\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FF\\ServerSession\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
